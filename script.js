@@ -1,34 +1,33 @@
-// Scroll function for hero button
-function scrollToSection(sectionId) {
-    document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });
-}
-
-// Add blog post to the blog section
-function addPost() {
-    const postContent = document.getElementById("newPostContent").value;
-    if (postContent) {
-        const postList = document.getElementById("postList");
-        const post = document.createElement("div");
-        post.classList.add("post");
-        post.textContent = postContent;
-        postList.appendChild(post);
-        document.getElementById("newPostContent").value = ""; // Clear the textarea
+document.addEventListener('DOMContentLoaded', function () {
+    const calendarEl = document.getElementById('calendar-container');
+    if (calendarEl) {
+        const calendar = new FullCalendar.Calendar(calendarEl, {
+            initialView: 'dayGridMonth',
+            editable: true,
+            selectable: true,
+            events: [
+                { title: 'Nature Hike', start: '2024-11-20' },
+                { title: 'Community Project', start: '2024-12-05' }
+            ],
+        });
+        calendar.render();
     }
-}
+});
 
-// Photo upload function
 function uploadPhoto() {
     const fileInput = document.getElementById("photoUpload");
-    const photoGallery = document.getElementById("photoGallery");
+    const gallery = document.getElementById("photoGallery");
     const file = fileInput.files[0];
     if (file) {
         const reader = new FileReader();
         reader.onload = function (e) {
             const img = document.createElement("img");
             img.src = e.target.result;
-            photoGallery.appendChild(img);
+            img.style.width = "150px";
+            img.style.height = "150px";
+            img.style.margin = "10px";
+            gallery.appendChild(img);
         };
         reader.readAsDataURL(file);
-        fileInput.value = ""; // Clear file input after uploading
     }
 }
