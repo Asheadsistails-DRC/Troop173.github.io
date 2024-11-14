@@ -3,10 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Troop</title>
+    <title>Cub Scout Troop 173</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Welcome to Our Cub Scout Troop Website!</h1>
-    <p>Here you will find all the information about upcoming events, meetings, and news for the troop.</p>
+    <!-- Navigation Bar -->
+    <nav>
+        <h1>Cub Scout Troop 173</h1>
+        <ul>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#events">Events</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <h2>Welcome to Cub Scout Troop 173</h2>
+        <p>Adventure, Learning, and Fun for Everyone!</p>
+        <button onclick="scrollToSection('events')">View Upcoming Events</button>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Our Troop</h2>
+        <p>We are a group of scouts committed to outdoor adventures, community service, and learning new skills. Join us in exploring, discovering, and building friendships!</p>
+    </section>
+
+    <!-- Events Section -->
+    <section id="events">
+        <h2>Upcoming Events</h2>
+        <ul id="eventList">
+            <!-- Events will be populated here by JavaScript -->
+        </ul>
+    </section>
+
+    <script src="script.js"></script>
 </body>
 </html>
