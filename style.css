@@ -5,16 +5,15 @@
     box-sizing: border-box;
 }
 
-/* Body Styling */
+/* Outdoor-inspired colors */
 body {
     font-family: Arial, sans-serif;
     color: #333;
-    line-height: 1.6;
+    background-color: #f5f3e9;
 }
 
-/* Navigation */
 nav {
-    background-color: #004aad;
+    background-color: #5a3e36; /* Brown */
     color: #fff;
     padding: 1rem 2rem;
     display: flex;
@@ -38,11 +37,6 @@ nav a {
     font-weight: bold;
 }
 
-nav a:hover {
-    text-decoration: underline;
-}
-
-/* Hero Section */
 #hero {
     background: url('https://placekitten.com/1200/500') no-repeat center center/cover;
     color: white;
@@ -55,69 +49,32 @@ nav a:hover {
     padding: 2rem;
 }
 
-#hero h2 {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-}
-
-#hero button {
-    background-color: #ffc107;
-    color: #004aad;
-    padding: 0.8rem 1.5rem;
-    border: none;
-    border-radius: 5px;
-    font-size: 1rem;
-    cursor: pointer;
-}
-
-#hero button:hover {
-    background-color: #e0a800;
-}
-
-/* About Section */
-#about {
+/* Section styling */
+#dendens, #calendar, #blog, #photos, #about {
     padding: 2rem;
     text-align: center;
-    background-color: #f4f4f9;
 }
 
-#about h2 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
+/* Den section styling */
+.den {
+    background-color: #004aad; /* Blue */
+    color: white;
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 5px;
 }
 
-#about p {
+/* Blog styling */
+#postList {
     max-width: 600px;
-    margin: 0 auto;
+    margin: auto;
+    text-align: left;
 }
 
-/* Events Section */
-#events {
-    padding: 2rem;
-    text-align: center;
-}
-
-#events h2 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-}
-
-#eventList {
-    list-style-type: none;
-}
-
-#eventList li {
-    margin: 0.5rem 0;
-    padding: 1rem;
-    background-color: #e1e9f0;
+/* Photo upload styling */
+#photoGallery img {
+    width: 150px;
+    height: 150px;
+    margin: 10px;
     border-radius: 5px;
-}
-
-/* Footer */
-footer {
-    padding: 1rem;
-    text-align: center;
-    background-color: #004aad;
-    color: #fff;
-    font-size: 0.9rem;
 }
