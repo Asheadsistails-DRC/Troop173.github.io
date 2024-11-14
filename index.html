@@ -12,30 +12,63 @@
         <h1>Cub Scout Troop 173</h1>
         <ul>
             <li><a href="#about">About Us</a></li>
-            <li><a href="#events">Events</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#dendens">Dens</a></li>
+            <li><a href="#calendar">Calendar</a></li>
+            <li><a href="#blog">Blog/Forum</a></li>
+            <li><a href="#photos">Photos</a></li>
         </ul>
     </nav>
 
     <!-- Hero Section -->
     <section id="hero">
-        <h2>Welcome to Cub Scout Troop 173</h2>
-        <p>Adventure, Learning, and Fun for Everyone!</p>
-        <button onclick="scrollToSection('events')">View Upcoming Events</button>
+        <h2>Explore, Learn, and Grow with Troop 173</h2>
+        <p>Adventure awaits in the great outdoors!</p>
+        <button onclick="scrollToSection('calendar')">Check Our Calendar</button>
     </section>
 
     <!-- About Section -->
     <section id="about">
         <h2>About Our Troop</h2>
-        <p>We are a group of scouts committed to outdoor adventures, community service, and learning new skills. Join us in exploring, discovering, and building friendships!</p>
+        <p>Our troop is dedicated to outdoor adventures, community involvement, and character building. Join us to explore nature, learn valuable skills, and make lifelong friends!</p>
     </section>
 
-    <!-- Events Section -->
-    <section id="events">
-        <h2>Upcoming Events</h2>
-        <ul id="eventList">
-            <!-- Events will be populated here by JavaScript -->
-        </ul>
+    <!-- Den Sections -->
+    <section id="dendens">
+        <h2>Our Dens</h2>
+        <div class="den" id="lions">Lions</div>
+        <div class="den" id="tigers">Tigers</div>
+        <div class="den" id="wolves">Wolves</div>
+        <div class="den" id="bears">Bears</div>
+    </section>
+
+    <!-- Calendar Section -->
+    <section id="calendar">
+        <h2>Event Calendar</h2>
+        <div id="calendar-container">
+            <!-- Calendar will go here, JavaScript can populate it -->
+            <p>Calendar feature coming soon!</p>
+        </div>
+    </section>
+
+    <!-- Blog/Forum Section -->
+    <section id="blog">
+        <h2>Blog/Forum</h2>
+        <p>Share stories, adventures, and thoughts with other troop members!</p>
+        <div id="postList">
+            <!-- Blog posts will be added here dynamically -->
+        </div>
+        <textarea id="newPostContent" placeholder="Write your post..."></textarea>
+        <button onclick="addPost()">Post</button>
+    </section>
+
+    <!-- Photo Upload Section -->
+    <section id="photos">
+        <h2>Troop Photos</h2>
+        <p>Share memories by uploading photos from our events.</p>
+        <input type="file" id="photoUpload" accept="image/*" onchange="uploadPhoto()">
+        <div id="photoGallery">
+            <!-- Uploaded photos will appear here -->
+        </div>
     </section>
 
     <script src="script.js"></script>
